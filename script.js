@@ -4,6 +4,7 @@
 // from 0 to 33 (inclusive) print rock
 // from 34 to 66 (inclusive) print paper
 // from 67 to 99 (inclusive) print scissors
+// Return computer's choice
 
 function getComputerChoice() {
     let randomNum = Math.floor(Math.random() * 100);
@@ -18,4 +19,13 @@ function getComputerChoice() {
     }
 
     return computerChoice;
+}
+
+// Prompt the player of their choice
+// Transform their choice to lowercase to avoid case sensitivity
+// Return player's choice
+
+function getHumanChoice() {
+    let humanChoice = prompt("Rock, Paper, or Scissors?");
+    return humanChoice.toLowerCase();
 }
