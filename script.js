@@ -27,5 +27,12 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     let humanChoice = prompt("Rock, Paper, or Scissors?");
-    return humanChoice.toLowerCase();
+    return humanChoice;
 }
+
+// Store human score in a variable and initialize to 0
+// Store computer score in a variable and initialize to 0
+
+let humanScore = 0;
+let computerScore = 0;
+
