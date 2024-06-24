@@ -58,3 +58,28 @@ function playRound(humanChoice, computerChoice) {
         console.log(`You Lose! ${computerChoice} beats ${humanChoice}`);
     }
 }
+
+// Loop through generating computer choice, getting human choice, and playing the round for 5 times
+// Display the scores every after a round
+// Determine and display the winner after 5 rounds has passed
+
+function playGame() {
+    for (let i = 0; i < 5; i++) {
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+
+        playRound(humanSelection, computerSelection);
+
+        console.log(`Round ${i + 1} Score: ${humanScore} - ${computerScore}`);
+    }
+
+    if (humanScore === computerScore) {
+        alert(`It's a Tie! Score: ${humanScore} - ${computerScore}`)
+    } else if (humanScore > computerScore) {
+        alert(`You Win! Score: ${humanScore} - ${computerScore}`);
+    } else {
+        alert(`You Lose... Score: ${humanScore} - ${computerScore}`);
+    }
+}
+
+playGame();
