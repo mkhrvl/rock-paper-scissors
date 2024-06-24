@@ -11,11 +11,11 @@ function getComputerChoice() {
     let computerChoice;
 
     if (randomNum >= 0 && randomNum <= 33) {
-        computerChoice = "rock";
+        computerChoice = "Rock";
     } else if (randomNum >= 34 && randomNum <= 66) {
-        computerChoice = "paper";
+        computerChoice = "Paper";
     } else {
-        computerChoice = "scissors";
+        computerChoice = "Scissors";
     }
 
     return computerChoice;
